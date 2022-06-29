@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  client_id: 'CLIENT_ID', // Your client id
+  client_secret: 'CLIENT_SECRET', // Your secret
+  redirect_uri: 'REDIRECT_URI' // Your ngredirect uri
+
 };
 
 /*
