@@ -4,10 +4,14 @@
 
 export const environment = {
   production: false,
-  client_id: 'CLIENT_ID', // Your client id
-  client_secret: 'CLIENT_SECRET', // Your secret
-  redirect_uri: 'REDIRECT_URI' // Your ngredirect uri
-
+  client_id: '28eae9b58df04f79b47821ee0a65bf15', // Our client id
+  client_secret: '7d2a373a17f14a82bb929a507b7be938', // Our secret
+  encoded_id_and_secret: 'MjhlYWU5YjU4ZGYwNGY3OWI0NzgyMWVlMGE2NWJmMTU6N2QyYTM3M2ExN2YxNGE4MmJiOTI5YTUwN2I3YmU5Mzg=',
+  redirect_uri: 'https%3A%2F%2Fwww.englishcentral.com%2Fbrowse%2Fvideos', // Our ngredirect uri (encoded)
+  api_base_url: "https://api.spotify.com/v1", //base uri for all api calls
+  scopes: "playlist-read-private", //scope for playlist reading, more may need to be added later
+  requestAuthUrl: 'https://accounts.spotify.com/authorize', //url to which we send an auth request
+  playlisturl: 'https://open.spotify.com/playlist/6Jm5avE8TNKvN1U43xLrFa?si=68d3b0387eef4349' //url of one of my open spotify playlists
 };
 
 /*
