@@ -11,7 +11,8 @@ export const environment = {
   api_base_url: "https://api.spotify.com/v1", //base uri for all api calls
   scopes: "playlist-read-private", //scope for playlist reading, more may need to be added later
   requestAuthUrl: 'https://accounts.spotify.com/authorize', //url to which we send an auth request
-  playlisturl: 'https://open.spotify.com/playlist/6Jm5avE8TNKvN1U43xLrFa?si=68d3b0387eef4349' //url of one of my open spotify playlists
+  playlisturl: 'https://open.spotify.com/playlist/6Jm5avE8TNKvN1U43xLrFa?si=68d3b0387eef4349', //url of one of my open spotify playlists
+  authcode : ''
 };
 
 /*

@@ -11,7 +11,15 @@ export class AppComponent {
   constructor(private authenticationService: AuthenticationService){}
 
   ngOnInit(): void {
-    this.onGetAuth();
+    this.onGetAccessToken();
+  }
+
+  onGetAccessToken(): void{
+    this.authenticationService.get_access_token().subscribe(
+      (response: any) => console.log(response),
+      (error: any) => console.log(error),
+      () => console.log("hopefully this onGetAccessToken call worked!")
+    );
   }
 
   onGetAuth(): void {
