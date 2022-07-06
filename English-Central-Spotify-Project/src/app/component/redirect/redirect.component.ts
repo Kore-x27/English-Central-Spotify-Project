@@ -1,4 +1,3 @@
-import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -14,9 +13,11 @@ export class RedirectComponent implements OnInit {
     private route: ActivatedRoute,
   ) { }
 
+  
   ngOnInit(): void {
     this.fetchcode();
-    console.log("does this work?");
+    console.log("does this work?"); //DELETE IN FINAL VERSION
+    console.log(this.route.snapshot.queryParams);
   }
 
   fetchcode(): any {

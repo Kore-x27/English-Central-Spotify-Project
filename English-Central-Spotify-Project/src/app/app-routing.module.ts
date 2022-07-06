@@ -1,12 +1,12 @@
+import { AppComponent } from './app.component';
 import { RedirectComponent } from './component/redirect/redirect.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './component/login/login.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'login/redirect', component: RedirectComponent },
-  { path: '**', redirectTo: 'login' }
+  { path: '', component: AppComponent },
+  { path: '/redirect', component: RedirectComponent },
+  { path: '**', redirectTo: 'main' }
 ];
 
 @NgModule({
