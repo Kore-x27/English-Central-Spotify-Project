@@ -1,4 +1,7 @@
+import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-redirect',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RedirectComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
+    this.fetchcode();
+    console.log("does this work?");
+  }
+
+  fetchcode(): any {
+    console.log(this.route.snapshot.paramMap.get('code'));
   }
 
 }
