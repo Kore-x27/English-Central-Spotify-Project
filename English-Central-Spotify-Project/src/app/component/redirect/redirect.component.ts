@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AnonymousSubject } from 'rxjs/internal/Subject';
 
 
 @Component({
@@ -7,21 +8,21 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './redirect.component.html',
   styleUrls: ['./redirect.component.css']
 })
-export class RedirectComponent implements OnInit {
 
+export class RedirectComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
   ) { }
 
   
-  ngOnInit(): void {
+  ngOnInit() {
     this.fetchcode();
-    console.log("does this work?"); //DELETE IN FINAL VERSION
-    console.log(this.route.snapshot.queryParams);
+
   }
 
-  fetchcode(): any {
-    console.log(this.route.snapshot.paramMap.get('code'));
+  fetchcode() {
+    // console.log(this.route.snapshot.paramMap.get('code'));
+    console.log(this.route.snapshot);
   }
 
 }
