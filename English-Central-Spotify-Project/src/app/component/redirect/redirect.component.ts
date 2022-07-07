@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AnonymousSubject } from 'rxjs/internal/Subject';
 
 
 @Component({
@@ -17,12 +16,13 @@ export class RedirectComponent implements OnInit {
   
   ngOnInit() {
     this.fetchcode();
+    console.log("this should be seen in the console if ngOnInit is working...");
 
   }
 
   fetchcode() {
-    // console.log(this.route.snapshot.paramMap.get('code'));
-    console.log(this.route.snapshot);
+    console.log(this.route.snapshot.paramMap.get('code'));
+    //console.log(this.route.snapshot);
   }
 
 }

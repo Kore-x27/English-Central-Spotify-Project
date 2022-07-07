@@ -10,9 +10,10 @@ export class AppComponent {
   title = 'English-Central-Spotify-Project';
   constructor(private authenticationService: AuthenticationService){}
 
-  // ngOnInit(): void {
-  //   this.onGetAccessToken();
-  // }
+  ngOnInit(): void {
+    // this.onGetAccessToken();
+    console.log("app.component.ts initialized");
+  }
 
   // onGetAccessToken(): void{
   //   this.authenticationService.get_access_token().subscribe(
