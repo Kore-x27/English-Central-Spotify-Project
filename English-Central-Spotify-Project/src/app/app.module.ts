@@ -9,6 +9,7 @@ import { RedirectComponent } from './component/redirect/redirect.component';
 @NgModule({
   declarations: [
     AppComponent,
+    
     RedirectComponent
   ],
   imports: [

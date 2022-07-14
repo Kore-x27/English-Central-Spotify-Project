@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AuthenticationService } from 'src/app/service/authentication.service';
 
 
 @Component({
@@ -15,8 +16,8 @@ export class RedirectComponent implements OnInit {
 
   
   ngOnInit() {
-    this.fetchcode();
     console.log("this should be seen in the console if ngOnInit is working...");
+    this.fetchcode();
 
   }
 

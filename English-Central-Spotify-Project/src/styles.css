@@ -28,14 +28,14 @@ div#or{
 
 div#border{
     height: 0.1px;
-    width: 220px;
+    width: 177px;
     border-bottom: 1px solid black;
     background-color: #191414;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-div#veya{
+div#OR{
     text-align: center;
 }
 
@@ -50,11 +50,11 @@ input{
 }
 
 div#input input{
-    width: 493px;
+    width: 393px;
     height: 35px;
     border: 0.5px solid rgb(152, 151, 151);
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #def2ff;
     color: #808080;
     margin-top: 1px;
     margin: auto;
@@ -62,8 +62,7 @@ div#input input{
 }
 
 div#input input:hover{
-    border: 1px solid black;
-    margin-bottom: 9px;
+    border: 0.5px solid black;
 } 
 
 div#input div#button button:hover{
@@ -81,7 +80,7 @@ div#input div#button button:active{
 div#button{
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 400px;
     text-align: center;
     margin-top: 20px;
     align-items: center;
@@ -100,7 +99,7 @@ div#input div#button button{
     margin-top: 5px;
 }
 
-p#oturum{
+p#account{
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
@@ -109,16 +108,68 @@ p#oturum{
     margin-bottom: 35px;
 }
 
-p#aç{
+p#getInput{
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
+div#show{
+    width: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#checkDiv{
+    width: 100px;
+}
+
+#check{
+    -ms-transform: scale(0.5); /* IE */
+    -moz-transform: scale(0.5); /* FF */
+    -webkit-transform: scale(0.5); /* Safari and Chrome */
+    -o-transform: scale(0.5); /* Opera */
+    transform: scale(0.5);
+    padding: 10px;
+    accent-color: #1DB954;
+    vertical-align: top;
+}
+
+#check:hover{
+    border: 1px solid #191414;
+}
+
 div#links{
-    width: 500px;
+    max-width: 400px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div#links a{
+    max-height: 50px;
+}
+
+div#links img{
+    float:inherit;
+}
+
+div#links img#facebook{
+    height: 30px;
+    width: 30px;
+}
+
+div#links img#ap{
+    height: 30px;
+    width: 30px;
+}
+
+div#links img#goog{
+    height: 20px;
+    width: 20px;
 }
 
 div#links a{
@@ -127,7 +178,7 @@ div#links a{
     padding: 10px;
     margin: 10px auto;
     border-radius: 25px;
-    text-align: center;
+    /* text-align: center; */
     font-size: medium;
     font-weight:550;
     cursor: default;
@@ -135,6 +186,17 @@ div#links a{
 
 div#links a:hover{
     border: 1px solid black;
+}
+
+a#fbtext{
+    position: relative;
+    bottom: 1px;
+}
+
+a#facebook{
+    position: relative;
+    top: 3px;
+    right: 20px;
 }
 
 a#fb{
@@ -154,8 +216,8 @@ a#google{
     color: #4d4d4d;
 }
 
-div#unut{  
-    width: 500px;  
+div#Forget{  
+    width: 400px;  
     margin-left: auto;
     margin-right: auto;
 }
@@ -170,8 +232,8 @@ a#forget:hover{
     text-decoration: underline;
 }
 
-#sınır{
+#full-border{
     border-bottom: 1px solid #808080;
     margin: 25px auto;
-    width: 500px;
+    width: 400px;
 }

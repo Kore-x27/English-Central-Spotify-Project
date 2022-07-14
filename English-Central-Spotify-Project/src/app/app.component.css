@@ -178,7 +178,7 @@ div#links a{
     padding: 10px;
     margin: 10px auto;
     border-radius: 25px;
-    text-align: center;
+    /* text-align: center; */
     font-size: medium;
     font-weight:550;
     cursor: default;
@@ -186,6 +186,17 @@ div#links a{
 
 div#links a:hover{
     border: 1px solid black;
+}
+
+a#fbtext{
+    position: relative;
+    bottom: 1px;
+}
+
+a#facebook{
+    position: relative;
+    top: 3px;
+    right: 20px;
 }
 
 a#fb{

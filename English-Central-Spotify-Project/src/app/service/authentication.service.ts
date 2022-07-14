@@ -10,7 +10,21 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AuthenticationService {
 
-  constructor( private http: HttpClient,) {}
+  constructor( 
+    private http: HttpClient,
+    private route: ActivatedRoute) {
+  }
+
+  ngOnInit() {
+    console.log("this should be seen in the console if ngOnInit is working...");
+    this.fetchcode();
+
+  }
+
+  fetchcode() {
+    console.log(this.route.snapshot.paramMap.get('code'));
+    window.alert('I got the authcode!');
+  }
   // For now authenticator is not implemented.
  
 //   public get_code(): Observable<spotifyAuthResponse> {
