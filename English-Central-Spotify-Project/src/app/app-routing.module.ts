@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'app-component', component: AppComponent },
-  { path: 'redirect-component', component: RedirectComponent },
+  { path: '', component: AppComponent },
+  { path: 'redirect', component: RedirectComponent },
 ];
 
 @NgModule({
