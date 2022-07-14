@@ -23,7 +23,7 @@ export class RedirectComponent implements OnInit {
 
   fetchcode() {
     console.log(this.route.snapshot.paramMap.get('code'));
-    //console.log(this.route.snapshot);
+    console.log(this.route.snapshot.queryParamMap.get('code'));
   }
 
 }
