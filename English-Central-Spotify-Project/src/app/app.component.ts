@@ -12,22 +12,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     // this.onGetAccessToken();
-    console.log("app.component.ts initialized");
+    // console.log("app.component.ts initialized");
   }
 
-  // onGetAccessToken(): void{
-  //   this.authenticationService.get_access_token().subscribe(
-  //     (response: any) => console.log(response),
-  //     (error: any) => console.log(error),
-  //     () => console.log("hopefully this onGetAccessToken call worked!")
-  //   );
-  // }
-
-  // onGetAuth(): void {
-  //   this.authenticationService.get_code().subscribe(
-  //     (response: any) => console.log(response),
-  //     (error: any) =>  console.log(error),
-  //     () => console.log("done with onGetAuth()")
-  //   );
-  // }
 }
