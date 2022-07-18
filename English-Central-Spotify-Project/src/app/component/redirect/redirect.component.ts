@@ -19,10 +19,11 @@ export class RedirectComponent implements OnInit {
 
   
   ngOnInit() {
-    // console.log("this should be seen in the console if ngOnInit in redirect is working...");
-    // this.fetchcode();
+    // console.log("this should be seen in the console if ngOnInit in redirect is working..."); REMOVE
+    // this.fetchcode(); REMOVE
     environment.authcode = this.fetchcode()!;
     this.fetchAccessToken(environment.authcode);
+    // Maybe make it so redirect component onInit redirects back to the mainpage component later? (Deniz)
 
   }
 
@@ -34,13 +35,13 @@ export class RedirectComponent implements OnInit {
     let headers: HttpHeaders = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/x-www-form-urlencoded');
     headers = headers.append('Authorization','Basic '+environment.encoded_id_and_secret);
-    // headers = headers.append('Access-Control-Allow-Origin', '*');
-    console.log(headers);
+    // headers = headers.append('Access-Control-Allow-Origin', '*'); THIS HEADER DOESN'T WORK, IN FACT IT CREATES AN ERROR FROM CORS PREFLIGHT RESPONSE.
+    console.log(headers); //REMOVE IN THE FUTURE
     let body = new URLSearchParams();
     body.append('grant_type', 'authorization_code');
     body.append('code', environment.authcode);
     body.append('redirect_uri', environment.redirect_uri);
-    console.log(body);
+    console.log(body); //REMOVE IN THE FUTURE
     this.http.post<spotifyAuthResponse>(environment.tokenUrl, body, {headers})
     .subscribe(response => {
       console.log(response); //REMOVE IN THE FUTURE

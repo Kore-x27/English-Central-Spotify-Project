@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     
-    RedirectComponent
+    RedirectComponent,
   ],
   imports: [
     BrowserModule,

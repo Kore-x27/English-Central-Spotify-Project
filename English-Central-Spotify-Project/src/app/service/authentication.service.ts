@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+// THIS ENTIRE FILE BASICALLY IS A DEAD FILE FOR NOW, IT JUST DOESN'T DO ANYTHING. (Deniz)
 
 @Injectable({
   providedIn: 'root'
