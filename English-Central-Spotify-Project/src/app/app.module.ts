@@ -1,17 +1,16 @@
-import { AuthenticationService } from 'src/app/service/authentication.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RedirectComponent } from './component/redirect/redirect.component';
-import { RouterModule } from '@angular/router';
+import { LoginComponent } from './component/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
     RedirectComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

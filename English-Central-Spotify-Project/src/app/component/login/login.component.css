@@ -63,7 +63,7 @@ div#input input{
 
 div#input input:hover{
     border: 0.5px solid black;
-}
+} 
 
 div#input div#button button:hover{
     background-color: #191414;
@@ -178,7 +178,7 @@ div#links a{
     padding: 10px;
     margin: 10px auto;
     border-radius: 25px;
-    text-align: center;
+    /* text-align: center; */
     font-size: medium;
     font-weight:550;
     cursor: default;
@@ -186,6 +186,17 @@ div#links a{
 
 div#links a:hover{
     border: 1px solid black;
+}
+
+a#fbtext{
+    position: relative;
+    bottom: 1px;
+}
+
+a#facebook{
+    position: relative;
+    top: 3px;
+    right: 20px;
 }
 
 a#fb{
@@ -205,8 +216,8 @@ a#google{
     color: #4d4d4d;
 }
 
-div#Forget{
-    width: 400px;
+div#Forget{  
+    width: 400px;  
     margin-left: auto;
     margin-right: auto;
 }
