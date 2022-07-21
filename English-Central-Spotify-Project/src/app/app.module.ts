@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RedirectComponent } from './component/redirect/redirect.component';
 import { LoginComponent } from './component/login/login.component';
+import { HomepageComponent } from './component/homepage/homepage.component';
+import { TrackComponent } from './component/track/track.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RedirectComponent,
-    LoginComponent
+    LoginComponent,
+    HomepageComponent,
+    TrackComponent
   ],
   imports: [
     BrowserModule,

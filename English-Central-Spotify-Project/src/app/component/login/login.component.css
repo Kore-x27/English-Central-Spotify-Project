@@ -3,7 +3,7 @@
 }
 
 header{
-    height: 6rem;
+    height: 5rem;
     width: 100%;
     border-bottom: 1px solid rgb(195, 195, 195);
 }
@@ -15,7 +15,7 @@ header img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.8%;
+    padding: 1.8% auto;
 }
 
 div#or{
@@ -51,7 +51,7 @@ input{
 
 div#input input{
     width: 393px;
-    height: 35px;
+    height: 45px;
     border: 0.5px solid rgb(152, 151, 151);
     border-radius: 5px;
     background-color: #def2ff;
@@ -144,32 +144,32 @@ div#show{
 div#links{
     max-width: 400px;
     margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
 }
 
 div#links a{
-    max-height: 50px;
+    max-height: 30px;
+    text-align: center;
 }
-
 div#links img{
-    float:inherit;
+    margin-right: 10px;
 }
 
 div#links img#facebook{
-    height: 30px;
-    width: 30px;
+    height: 18px;
+    width: 18px;
 }
 
 div#links img#ap{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 16.3px;
 }
 
 div#links img#goog{
-    height: 20px;
-    width: 20px;
+    height: 17px;
+    width: 17px;
 }
 
 div#links a{
@@ -178,7 +178,6 @@ div#links a{
     padding: 10px;
     margin: 10px auto;
     border-radius: 25px;
-    /* text-align: center; */
     font-size: medium;
     font-weight:550;
     cursor: default;
