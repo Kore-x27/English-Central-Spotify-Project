@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="login.component.css">
 
 <header>
     <img src="../../../images/01_RGB/02_PNG/Spotify_Logo_RGB_Black.png" alt="">
@@ -9,7 +10,7 @@
     <a href="" id="fb"><img id="facebook" src="../../../images/NicePng_facebook-black-png_903144.png" alt="">  CONTINUE WITH FACEBOOK</a>
     <a href="" id="apple"><img id="ap" src="../../../images/white-apple-835x1024.png" alt=""> CONTINUE WITH APPLE</a>
     <a href="" id="google"> <img id="goog" src="../../../images/5a35540277d9e6.8445514415134443544909.png" alt="">  CONTINUE WITH GOOGLE</a>
-    <a href="https://accounts.spotify.com/authorize?client_id=7ccebf2ff216462c95bfa566333bbabc&scopes=playlist-read-private&response_type=code&redirect_uri=http://localhost:4200/redirect"> Auth testing</a>
+    <a [href]="getAuthenticationTestUrl()"> Auth testing</a>
 </div>
 
 <div id="or">

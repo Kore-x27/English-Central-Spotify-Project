@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { spotifyAuthResponse } from './../../interface/spotifyAuthResponse';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 
 
@@ -14,7 +14,8 @@ import { environment } from 'src/environments/environment';
 export class RedirectComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router
   ) { };
 
   
@@ -34,7 +35,7 @@ export class RedirectComponent implements OnInit {
   fetchAccessToken(code:string){
     let headers: HttpHeaders = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/x-www-form-urlencoded');
-    headers = headers.append('Authorization','Basic '+environment.encoded_id_and_secret);
+    headers = headers.append('Authorization','Basic '+ btoa(`${environment.client_id}:${environment.client_secret}`));
     // headers = headers.append('Access-Control-Allow-Origin', '*'); THIS HEADER DOESN'T WORK, IN FACT IT CREATES AN ERROR FROM CORS PREFLIGHT RESPONSE.
     console.log(headers); //REMOVE IN THE FUTURE
     let body = new URLSearchParams();
@@ -47,7 +48,11 @@ export class RedirectComponent implements OnInit {
       console.log(response); //REMOVE IN THE FUTURE
       environment.accesstoken = response.access_token;
       environment.refreshtoken = response.refresh_token;
+      this.redirectToHomePage();
     });
 
+}
+redirectToHomePage (){
+  this.router.navigate(["homepage"]);
 }
 }
