@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  client_id: '28eae9b58df04f79b47821ee0a65bf15', // Our client id
-  client_secret: '7d2a373a17f14a82bb929a507b7be938', // Our secret
+  client_id: '7ccebf2ff216462c95bfa566333bbabc', // Our client id
+  client_secret: 'c11c6f4f85f4485d8335260a2cb7a42d', // Our secret
   redirect_uri: 'http://localhost:4200/redirect', // Our ngredirect uri (curently unencoded)
   api_base_url: "https://api.spotify.com/v1", //base uri for all api calls
   scopes: "playlist-read-private", //scope for playlist reading, more may need to be added later

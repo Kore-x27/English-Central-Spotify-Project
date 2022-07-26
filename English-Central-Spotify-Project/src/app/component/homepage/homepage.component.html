@@ -1,1 +1,8 @@
 <p>homepage works!</p>
+
+<div class="container">
+    <ul *ngFor="let response of tracks">
+        <li>{{response.name}}</li>
+        <li><img src="{{response.image}}" alt=""></li>
+    </ul>
+</div>
