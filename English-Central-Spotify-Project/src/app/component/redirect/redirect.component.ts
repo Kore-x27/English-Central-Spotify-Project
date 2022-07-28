@@ -55,20 +55,4 @@ export class RedirectComponent implements OnInit {
   redirectToHomePage (){
     this.router.navigate(["homepage"]);
   }
-
-  getData(){
-    // let url = "https://api.spotify.com/tracks/{7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B}";
-    // return this.http.get(url);
-    // this.addTrackToPlaylist("2MuWTIM3b0YEAskbeeFE1i", environment.accesstoken);
-  }
-
-  // addTrackToPlaylist(authToken: string) {
-  //   // params: new HttpParams().set('custom', 'Spo');
-  //   let headers = new HttpHeaders();
-  //   headers = headers.append('Authorization', 'Bearer ' + authToken);
-  //   let searchUrl: string = 'https://api.spotify.com/v1/tracks/https://api.spotify.com/v1/tracks/7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B';
-
-  //   return this.http.get(searchUrl, { headers })
-  //   .pipe(((response: any) => response));
-  // }
 }

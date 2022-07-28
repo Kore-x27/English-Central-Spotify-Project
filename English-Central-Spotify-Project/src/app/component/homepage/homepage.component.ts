@@ -1,22 +1,33 @@
+import { NgIf } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { AppStateService } from 'src/app/app-state.service';
 import { environment } from 'src/environments/environment';
+import {Tracks} from '../tracks';
 
 @Component({
   selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
+  templateUrl: 'homepage.component.html',
+  styleUrls: ['homepage.component.css'],
+  providers: [AppStateService]
 })
 export class HomepageComponent implements OnInit {
 
-  tracks: any = [];
+  tracks?: Tracks[];
+  comp: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+              private AppStateService: AppStateService) { }
 
   ngOnInit(): void {
     console.log('HomepageComponentcreated');
 
     this.addTrackToPlaylist(environment.accesstoken);
+
+    this.comp = this.AppStateService.setLoginPageVisibility;
+    this.comp = this.AppStateService.isLoginPageVisible;
+
+    this.AppStateService.setLoginPageVisibility(false);
   }
 
   addTrackToPlaylist(authToken: string) {

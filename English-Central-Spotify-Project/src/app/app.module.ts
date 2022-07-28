@@ -7,6 +7,7 @@ import { RedirectComponent } from './component/redirect/redirect.component';
 import { LoginComponent } from './component/login/login.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { TrackComponent } from './component/track/track.component';
+// import { AppStateService } from './app-state.service';
 
 @NgModule({
   declarations: [
@@ -19,9 +20,11 @@ import { TrackComponent } from './component/track/track.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [],
+  // providers: [
+  //   AppStateService
+  // ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

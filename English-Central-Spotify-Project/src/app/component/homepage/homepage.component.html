@@ -1,8 +1,29 @@
-<p>homepage works!</p>
+<link rel="stylesheet" href="homepage.component.css">
 
 <div class="container">
     <ul *ngFor="let response of tracks">
-        <li>{{response.name}}</li>
-        <li><img src="{{response.image}}" alt=""></li>
+        <div class="image">
+            
+        </div>
+
+        <div class="name">
+            {{response.name}}
+        </div>
+
+        <div class="album-type">
+            {{response.type}}
+        </div>
+
+        <div class="date">
+            {{response.release_date}}
+        </div>
+
+        <div class="heart-like-button">
+            <button></button>
+        </div>
+
+        <div class="duration">
+            {{response.duration_ms}}
+        </div>
     </ul>
 </div>
