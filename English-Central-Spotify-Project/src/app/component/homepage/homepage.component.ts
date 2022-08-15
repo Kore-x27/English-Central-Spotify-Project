@@ -14,7 +14,6 @@ import {Tracks} from '../tracks';
 export class HomepageComponent implements OnInit {
 
   tracks?: Tracks[];
-  comp: any;
 
   constructor(private http: HttpClient,
               private AppStateService: AppStateService) { }
@@ -24,9 +23,7 @@ export class HomepageComponent implements OnInit {
 
     this.addTrackToPlaylist(environment.accesstoken);
 
-    this.comp = this.AppStateService.setLoginPageVisibility;
-    this.comp = this.AppStateService.isLoginPageVisible;
-
+    console.log('setLoginPageVisible');
     this.AppStateService.setLoginPageVisibility(false);
   }
 

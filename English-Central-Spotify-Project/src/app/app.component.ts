@@ -13,23 +13,16 @@ export class AppComponent {
 
   // isLoggedIn: boolean = false;
   title = 'English-Central-Spotify-Project';
-  constructor(private authenticationService: AuthenticationService){}
-    // private user: RedirectComponent){this.user.getData().subscribe((data: any)=>{console.warn(data)})}
+  constructor(private authenticationService: AuthenticationService,
+    private appstateService: AppStateService){}
 
   ngOnInit(): void {
     console.log('AppComponentcreated');
-    
-    // this.isLoggedIn = this.appStateService.isLoginPageVisible();
-    // this.isLoggedIn = this.appStateService.isLoginPageVisible();
-    // this.onGetAccessToken();
-    // console.log("app.component.ts initialized");
   }
 
-  // asd() {
-  //   this.appStateService.setLoginPageVisibility(false);
-  //   this.isLoggedIn = this.appStateService.isLoginPageVisible();
-
-  // }
-
+  isLoginPageVisible(){
+    console.log('isLoginPageVisible',this.appstateService.isLoginPageVisible());
+    return this.appstateService.isLoginPageVisible();
+  }
 }
 

@@ -9,11 +9,9 @@ export class AppStateService {
 
   loginPageVisible: boolean = true;
 
-
   isLoginPageVisible(): boolean {
          return this.loginPageVisible;
   }
-  
   
   setLoginPageVisibility(visible: boolean): void {
          this.loginPageVisible = visible;
