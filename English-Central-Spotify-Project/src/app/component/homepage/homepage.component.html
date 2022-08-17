@@ -1,29 +1,67 @@
 <link rel="stylesheet" href="homepage.component.css">
 
 <div class="container">
-    <ul *ngFor="let response of tracks">
-        <div class="image">
+
+    <div class="left-side">
+        <div class="top">
+            <ul>
+                <img src="../../../images/01_RGB/02_PNG/Spotify_Logo_RGB_White.png" alt="" width="140px" height="42px">
+                <li><a href="">Home Page</a></li>
+                <li><a href="">Search</a></li>
+                <li><a href="">Library</a></li>
+                <li></li>
+                <li><a href="">Create a playlist</a></li>
+                <li><a href="">Liked Songs</a></li>
+            </ul>
+            <div class="border"></div>
+            <div class="playlists"><a href=""> + Create a New Playlist</a></div>
+        </div>
+    </div>
+
+    <div class="album">
+        <div class="album-header">
+            <div class="album-img">
+                <img src="../../../images/album-img.jpg" alt="" width="230x" height="230px">
+            </div>
+            <div class="album-info">
+                <p>ALBUM</p>
+                <P class="album-name">Black Holes and Revelations</P>
+                <p>Muse - 2006 - 3 Songs - 15 m. 7 sec<p>
+            </div>
+        </div>
+
+        <div class="tracks">
+            <ul *ngFor="let response of tracks">
+                <div class="image">
             
+                </div>
+
+                <div class="name">
+                    {{response.name}}
+                </div>
+
+                <div class="album-type">
+                    {{response.type}}
+                </div>
+
+                <div class="date">
+                    {{response.release_date}}
+                </div>
+
+                <div class="heart-like-button">
+                    <button></button>
+                </div>
+
+                <div class="duration">
+                    {{response.duration_ms}}
+                </div>
+            </ul>
         </div>
 
-        <div class="name">
-            {{response.name}}
-        </div>
+        <div class="playing">
 
-        <div class="album-type">
-            {{response.type}}
         </div>
-
-        <div class="date">
-            {{response.release_date}}
-        </div>
-
-        <div class="heart-like-button">
-            <button></button>
-        </div>
-
-        <div class="duration">
-            {{response.duration_ms}}
-        </div>
-    </ul>
+    </div>
 </div>
+
+<script src="/English-Central-Spotify-Project/src/app/component/homepage/homepage.component.ts"></script>

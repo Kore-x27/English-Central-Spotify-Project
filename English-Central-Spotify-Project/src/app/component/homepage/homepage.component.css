@@ -1,4 +1,107 @@
-ul{
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* ::-webkit-scrollbar{
+    width:none;
+} */
+
+div.container{
+    display: flex;
+}
+
+div.left-side{
+    background-color: #000000;
+    color: rgb(196, 194, 194);
+    width: 285px;
+    height: 100vh;
+}
+
+.top ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.top img{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.playlists{
+    padding: 20px;
+}
+
+a{
+    color: rgb(116, 116, 116); 
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: 15px;
+    font-weight: 550;
+    margin: 5px;
+}
+
+a:hover{
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.top li{
+    padding: 8px;
+}
+
+.border{
+    border-bottom: 1px solid rgb(39, 39, 39);
+    width: 180px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.album{
+    width: 100%;
+}
+
+div.album-header{
+    background-image: linear-gradient(180deg, #b32e09 ,#3b1203);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+}
+
+.tracks{
+    background-image: linear-gradient(180deg, #3f1405, #191414, #191414,#191414);
+}
+
+.album ul {
     text-decoration: none;
     display: flex;
+    color: white;
+}
+
+.album-img img{
+    margin: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tracks{
+    height: 100%;
+    padding-top: 20px;
+}
+
+.tracks ul div{
+    padding-top: 40px;
+}
+
+
+
+.album-info{
+    padding-top: 100px;
+    font-size: x-small;
+    font-weight: 700;
+    color: white;
+}
+
+.album-name{
+    font-size: 65px;
 }

@@ -9,7 +9,6 @@ import {Tracks} from '../tracks';
   selector: 'app-homepage',
   templateUrl: 'homepage.component.html',
   styleUrls: ['homepage.component.css'],
-  providers: [AppStateService]
 })
 export class HomepageComponent implements OnInit {
 
@@ -39,5 +38,11 @@ export class HomepageComponent implements OnInit {
     .subscribe(((response: any) => {
       this.tracks = response.tracks;
     }));
+  }
+
+  milisecToSecond(milisecond: any){
+    var seconds = milisecond * 1000;
+    var minutes = seconds / 60;
+    var duration = 'minutes' + 'minutes % 60';
   }
 }
