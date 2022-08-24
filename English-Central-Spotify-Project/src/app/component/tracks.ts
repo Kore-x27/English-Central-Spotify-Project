@@ -1,4 +1,5 @@
 export class Tracks{
+    albumName?: string;
     name?: string;
     duration_ms?: number;
     images?: string;
@@ -7,14 +8,6 @@ export class Tracks{
     track_number?: number;
     type?: string;
     release_date?: string;
-
-    // convertMsToS (ms: number) {  Function for convert the milisecond to minute -- Will continue -- **Ozan
-    //     let value: any = this.duration_ms;
-    //     let second: number;
-    //     let minute: number;
-
-    //     second = value * 1000;
-    //     minute = 
-
-    // }
+    album: any;
+    
 }

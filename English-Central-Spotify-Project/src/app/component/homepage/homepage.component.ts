@@ -13,6 +13,9 @@ import {Tracks} from '../tracks';
 export class HomepageComponent implements OnInit {
 
   tracks?: Tracks[];
+  name: string = "";
+  albumType: string = "";
+  image: any;
 
   constructor(private http: HttpClient,
               private AppStateService: AppStateService) { }
@@ -37,12 +40,18 @@ export class HomepageComponent implements OnInit {
     this.http.get(searchUrl, {headers, params: {ids: "7ouMYWpwJ422jRcDASZB7P,4VqPOruhp5EdPBeR92t6lQ,2takcwOaAZWiXQijPHIx7B"}})
     .subscribe(((response: any) => {
       this.tracks = response.tracks;
+      this.name = response.tracks[0].album.name;
+      this.albumType = response.tracks[0].album.album_type;
+      this.image = response.tracks[0].album.images[0];
     }));
   }
 
-  milisecToSecond(milisecond: any){
-    var seconds = milisecond * 1000;
-    var minutes = seconds / 60;
-    var duration = 'minutes' + 'minutes % 60';
+  milisecondToSecond (duration_ms: number){
+    let second: number;
+    let minute: number;
+    let remain: number;
+
+    second = duration_ms / 1000;
+    minute = second / 60;
   }
 }

@@ -18,7 +18,7 @@ header img{
     padding: 1.8% auto;
 }
 
-div#or{
+div.or{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@ div#or{
     margin-bottom: 25px;
 }
 
-div#border{
+div.border{
     height: 0.1px;
     width: 177px;
     border-bottom: 1px solid black;
@@ -35,11 +35,11 @@ div#border{
     margin-left: 10px;
 }
 
-div#OR{
+div.OR{
     text-align: center;
 }
 
-div#input{
+div.input{
     margin-top: 20px;
 }
 
@@ -49,7 +49,7 @@ input{
     display: block;
 }
 
-div#input input{
+div.input input{
     width: 393px;
     height: 45px;
     border: 0.5px solid rgb(152, 151, 151);
@@ -61,23 +61,23 @@ div#input input{
     margin-bottom: 10px;
 }
 
-div#input input:hover{
+div.input input:hover{
     border: 0.5px solid black;
 } 
 
-div#input div#button button:hover{
+div.input div.button button:hover{
     background-color: #191414;
     color: #1DB954;
     cursor: pointer;
 }
 
-div#input div#button button:active{
+div.input div.button button:active{
     width: 497px;
     height: 33px;
     margin-top: 7px;
 }
 
-div#button{
+div.button{
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -86,7 +86,7 @@ div#button{
     align-items: center;
 }
 
-div#input div#button button{
+div.input div.button button{
     background-color: #1DB954;
     text-decoration: none;
     color: #191414;
@@ -99,7 +99,7 @@ div#input div#button button{
     margin-top: 5px;
 }
 
-p#account{
+p.account{
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
@@ -108,25 +108,25 @@ p#account{
     margin-bottom: 35px;
 }
 
-p#getInput{
+p.getInput{
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-div#show{
+div.show{
     width: 400px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 
-#checkDiv{
+.checkDiv{
     width: 100px;
 }
 
-#check{
+.check{
     -ms-transform: scale(0.5); /* IE */
     -moz-transform: scale(0.5); /* FF */
     -webkit-transform: scale(0.5); /* Safari and Chrome */
@@ -137,11 +137,11 @@ div#show{
     vertical-align: top;
 }
 
-#check:hover{
+.check:hover{
     border: 1px solid #191414;
 }
 
-div#links{
+div.links{
     max-width: 400px;
     margin: auto;
     /* justify-content: center; */
@@ -149,30 +149,30 @@ div#links{
     /* text-align: center; */
 }
 
-div#links a{
+div.links a{
     max-height: 30px;
     text-align: center;
 }
-div#links img{
+div.links img{
     margin-right: 10px;
 }
 
-div#links img#facebook{
+div.links img.facebook{
     height: 18px;
     width: 18px;
 }
 
-div#links img#ap{
+div.links img.ap{
     height: 20px;
     width: 16.3px;
 }
 
-div#links img#goog{
+div.links img.goog{
     height: 17px;
     width: 17px;
 }
 
-div#links a{
+div.links a{
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -183,55 +183,55 @@ div#links a{
     cursor: default;
 }
 
-div#links a:hover{
+div.links a:hover{
     border: 1px solid black;
 }
 
-a#fbtext{
+a.fbtext{
     position: relative;
     bottom: 1px;
 }
 
-a#facebook{
+a.facebook{
     position: relative;
     top: 3px;
     right: 20px;
 }
 
-a#fb{
+a.fb{
     color: rgb(255, 255, 255);
     background-color: #4267B2;
     border: 1px solid #d3d3d3;
 }
 
-a#apple{
+a.apple{
     color: white;
     background-color: black;
     border: 1px solid #d3d3d3;
 }
 
-a#google{
+a.google{
     border: 1px solid #d3d3d3;
     color: #4d4d4d;
 }
 
-div#Forget{  
+div.Forget{  
     width: 400px;  
     margin-left: auto;
     margin-right: auto;
 }
 
-a#forget{
+a.forget{
     text-decoration: none;
     color: #191414;
     font-weight: 550;
 }
 
-a#forget:hover{
+a.forget:hover{
     text-decoration: underline;
 }
 
-#full-border{
+.full-border{
     border-bottom: 1px solid #808080;
     margin: 25px auto;
     width: 400px;
