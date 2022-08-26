@@ -2,6 +2,10 @@
     font-family: sans-serif, Arial, Helvetica;
 }
 
+body{
+    margin: 0;
+}
+
 header{
     height: 6rem;
     width: 100%;

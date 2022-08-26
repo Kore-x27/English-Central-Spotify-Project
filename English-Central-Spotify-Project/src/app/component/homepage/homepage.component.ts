@@ -16,6 +16,7 @@ export class HomepageComponent implements OnInit {
   name: string = "";
   albumType: string = "";
   image: any;
+  artist: any;
 
   constructor(private http: HttpClient,
               private AppStateService: AppStateService) { }
@@ -43,6 +44,7 @@ export class HomepageComponent implements OnInit {
       this.name = response.tracks[0].album.name;
       this.albumType = response.tracks[0].album.album_type;
       this.image = response.tracks[0].album.images[0];
+      this.artist = response.tracks[0].album.artist[0].name;
     }));
   }
 

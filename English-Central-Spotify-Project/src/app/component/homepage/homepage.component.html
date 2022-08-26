@@ -28,7 +28,7 @@
             <div class="album-info">
                 <p class="type">{{albumType}}</p>
                 <P class="album-name">{{name}}</P>
-                <p>Muse - 2006 - 3 Songs - 15 m. 7 sec<p>
+                <p>{{artist}} - 2006 - 3 Songs - 15 m. 7 sec<p>
             </div>
         </div>
 
@@ -107,15 +107,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function(){
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-    }
-</script>
 
 <script>
     $( "jsClick" ).click(function() {
